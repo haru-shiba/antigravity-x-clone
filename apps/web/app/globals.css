@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #e7e9ea;
+  --border-color: #2f3336;
+  --accent-color: #1d9bf0;
+  --hover-bg: rgba(239, 243, 244, 0.1);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@layer utilities {
+  .border-x-theme {
+    border-color: var(--border-color);
+  }
+
+  .text-theme-gray {
+    color: #71767b;
+  }
+}
